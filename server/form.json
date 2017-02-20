@@ -1,0 +1,43 @@
+{
+  "fields": [
+    {
+      "name": "form-fields",
+      "type": "list-select",
+      "select": "type",
+      "has-details": true,
+      "fields": [
+        {
+          "name": "title",
+          "type": "text",
+          "required": true,
+          "min-length": 1,
+          "max-length": 30
+        },
+        {
+            "name": "type",
+            "type": "select",
+            "values": {
+                "name-input": "name-input",
+                "address": "address",
+                "text": "text",
+                "radio": "radio"
+            },
+            "required": true
+        },
+        {
+          "name": "description",
+          "type": "textarea",
+          "required": true,
+          "min-length": 3
+        },
+        {
+          "name": "options",
+          "type": "single_list",
+          "selected": ["radio"],
+          "required": true,
+          "min-length": 2
+        }
+      ]
+    }
+  ]
+}

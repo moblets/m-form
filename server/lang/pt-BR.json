@@ -1,0 +1,35 @@
+{
+  "moblet": {
+    "label": "Formulário",
+    "hint": "Crie um formulário",
+    "description": "Preencha os campos abaixo para criar um formulário"
+  },
+  "form-fields": {
+    "label": "Campos do formulário",
+    "hint": "Insira os campos",
+    "list_button": "Adicionar campos"
+  },
+  "title": {
+    "label": "Questão",
+    "hint": "Título da questão",
+    "placeholder": "Minha questão"
+  },
+  "description": {
+    "label": "Descrição",
+    "hint": "Descrição da questão",
+    "placeholder": "Descrição da questão"
+  },
+  "options": {
+    "label": "Opções",
+    "hint": "Opções",
+    "placeholder": "Opções"
+  },
+  "type": {
+    "label": "Tipo do campo",
+    "hint": "Escolha o tipo do campo",
+    "name-input": "Nome",
+    "address": "Endereço",
+    "text": "Texto",
+    "radio": "Escolha única"
+  }
+}
