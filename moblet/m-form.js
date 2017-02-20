@@ -1,7 +1,7 @@
 /* eslint no-undef: [0]*/
 module.exports = {
   title: "mForm",
-  style: "m-form.scss",
+  style: "m-form.less",
   template: 'm-form.html',
   i18n: {
     pt: "lang/pt-BR.json",
