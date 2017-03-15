@@ -14,15 +14,9 @@
     "hint": "Título da questão",
     "placeholder": "Minha questão"
   },
-<<<<<<< HEAD
   "required-input": {
     "label": "Campo obrigatório",
     "hint": "Campo obrigatório"
-=======
-  "required": {
-    "label": "Obrigatório",
-    "hint": "Obrigatório"
->>>>>>> f0f88f046a65efd7380d055eda95c8657d3837bc
   },
   "description": {
     "label": "Descrição",
