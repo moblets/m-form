@@ -1,8 +1,8 @@
 /* eslint no-undef: [0]*/
 module.exports = {
-  title: "mForm",
-  style: "m-form.less",
-  template: 'm-form.html',
+  title: "mCustomForm",
+  style: "m-custom-form.less",
+  template: 'm-custom-form.html',
   i18n: {
     pt: "lang/pt-BR.json",
     en: "lang/en-US.json"
@@ -22,8 +22,7 @@ module.exports = {
       $scope.moblet = $uMoblet.load();
       var options = {
         offset: 1,
-        items: 25,
-        itemsArray: "locations"
+        items: 25
       };
       $uFeedLoader.load($scope.moblet, options, false)
         .then(function(data) {

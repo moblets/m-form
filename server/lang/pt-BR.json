@@ -14,6 +14,10 @@
     "hint": "Título da questão",
     "placeholder": "Minha questão"
   },
+  "required-input": {
+    "label": "Campo obrigatório",
+    "hint": "Campo obrigatório"
+  },
   "description": {
     "label": "Descrição",
     "hint": "Descrição da questão",
