@@ -14,9 +14,15 @@
     "hint": "Título da questão",
     "placeholder": "Minha questão"
   },
+<<<<<<< HEAD
   "required-input": {
     "label": "Campo obrigatório",
     "hint": "Campo obrigatório"
+=======
+  "required": {
+    "label": "Obrigatório",
+    "hint": "Obrigatório"
+>>>>>>> f0f88f046a65efd7380d055eda95c8657d3837bc
   },
   "description": {
     "label": "Descrição",
@@ -26,14 +32,50 @@
   "options": {
     "label": "Opções",
     "hint": "Opções",
-    "placeholder": "Opções"
+    "placeholder": "Opção %f"
   },
   "type": {
     "label": "Tipo do campo",
+    "default": "Escolha o tipo do campo",
     "hint": "Escolha o tipo do campo",
     "name-input": "Nome",
     "address": "Endereço",
-    "text": "Texto",
+    "email": "Email",
+    "phone-number": "Telefone",
+    "date": "Data",
+    "time": "Horário",
+    "text": "Campo de texto curto",
+    "textarea": "Campo de texto longo",
+    "scale": "Escala",
+    "select": "Lista",
+    "checkbox": "Múltiplas escolhas",
     "radio": "Escolha única"
+  },
+  "address-options": {
+    "label": "campos adicionados",
+    "street": "Logradouro (rua, avenida, etc)",
+    "number": "Número",
+    "complement": "Complemento",
+    "zipcode": "CEP",
+    "city": "Cidade",
+    "country": "País",
+    "state": "Estado"
+  },
+  "scale_size": {
+    "label": "quantidade de escolhas",
+    "2": "02",
+    "3": "03",
+    "4": "04",
+    "5": "05"
+  },
+  "scale_marker_begin": {
+    "label": "marcador início (opcional)",
+    "hint": "marcador início",
+    "placeholder": "marcador início"
+  },
+  "scale_marker_end": {
+    "label": "marcador fim (opcional)",
+    "hint": "marcador fim",
+    "placeholder": "marcador fim"
   }
 }

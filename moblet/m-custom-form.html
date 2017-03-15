@@ -1,5 +1,8 @@
 <div>
-  <div class="content">
-    Teste
-  </div>
+  <form>
+    <div ng-repeat="(key, field) in fields">
+      <div ng-bind-html="field.title"></div>
+      <input type="{{field.type}}"/>
+    </div>
+  </form>
 </div>

@@ -18,24 +18,80 @@
             "type": "select",
             "values": {
                 "name-input": "name-input",
+                "email": "email",
+                "phone-number": "phone-number",
                 "address": "address",
+                "date": "date",
+                "time": "time",
                 "text": "text",
-                "radio": "radio"
+                "textarea": "textarea",
+                "checkbox": "checkbox",
+                "radio": "radio",
+                "select": "select",
+                "scale": "scale"
             },
-            "required": true
+            "required": true,
+            "size": 3
+        },
+        {
+          "name": "required",
+          "type": "checkbox",
+          "size": 3
         },
         {
           "name": "description",
           "type": "textarea",
-          "required": true,
-          "min-length": 3
+          "size": 6
+        },
+        {
+            "name": "address-options",
+            "type": "checkbox-list",
+            "values": {
+                "street": "street",
+                "number": "number",
+                "complement": "complement",
+                "zipcode": "zipcode",
+                "city": "city",
+                "country": "country",
+                "state": "state"
+            },
+            "defaultValue": ["street", "number", "complement", "zipcode", "city", "country", "state"],
+            "selected": ["address"],
+            "required": true
         },
         {
           "name": "options",
           "type": "single_list",
-          "selected": ["radio"],
+          "selected": ["radio", "checkbox", "select"],
           "required": true,
           "min-length": 2
+        },
+        {
+          "name": "scale_size",
+          "type": "select",
+          "selected": ["scale"],
+          "required": true,
+          "actualSize": true,
+          "defaultValue": "5",
+          "values": {
+            "2" : "2",
+            "3" : "3",
+            "4" : "4",
+            "5" : "5"
+          },
+          "size": 12
+        },
+        {
+          "name": "scale_marker_begin",
+          "type": "text",
+          "selected": ["scale"],
+          "size": 4
+        },
+        {
+          "name": "scale_marker_end",
+          "type": "text",
+          "selected": ["scale"],
+          "size": 4
         }
       ]
     }
