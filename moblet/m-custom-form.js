@@ -16,15 +16,17 @@ module.exports = {
     var options = {
     };
     
+    $scope.answers = [];
+    
+    $scope.$watch('answers', function() {console.log($scope.answers)}, true);
+    
     var init = function() {
       $scope.moblet.isLoading = true;
-      console.log('oi?');
       $mDataLoader.load($scope.moblet, options, false)
         .then(function(data) {
           // Put the data from the feed in the $scope object
           $scope.moblet.isLoading = false;
           $scope.fields = data['form-fields'];
-          console.log(data);
         });
     };
 

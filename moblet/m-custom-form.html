@@ -1,8 +1,68 @@
-<div>
-  <form>
+<div class="content">
+  <m-form>
     <div ng-repeat="(key, field) in fields">
-      <div ng-bind-html="field.title"></div>
-      <input type="{{field.type}}"/>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'name-input'">
+        <label ng-bind-html="field.title"></label>
+        <m-input model="answers[key][field.title]" name="{{field.title}}" type="text"/>
+      </div>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'text'">
+        <label ng-bind-html="field.title"></label>
+        <m-input model="answers[key][field.title]" name="{{field.title}}" type="text"/>
+      </div>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'textarea'">
+        <label ng-bind-html="field.title"></label>
+        <m-textarea model="answers[key][field.title]" name="{{field.title}}"/>
+      </div>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'email'">
+        <label ng-bind-html="field.title"></label>
+        <m-input model="answers[key][field.title]" name="{{field.title}}" type="email"/>
+      </div>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'phone-number'">
+        <label ng-bind-html="field.title"></label>
+        <m-input model="answers[key][field.title]" name="{{field.title}}" type="phone"/>
+      </div>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'date'">
+        <label ng-bind-html="field.title"></label>
+        <m-input model="answers[key][field.title]" name="{{field.title}}" type="date"/>
+      </div>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'time'">
+        <label ng-bind-html="field.title"></label>
+        <m-input model="answers[key][field.title]" name="{{field.title}}" type="time"/>
+      </div>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'radio' || field.type == 'checkbox'">
+        <label ng-bind-html="field.title"></label>
+        <m-input-list model="answers[key][field.title]" name="{{field.title}}" type="{{field.type}}" options="field.options"/>
+      </div>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'select'">
+        <label ng-bind-html="field.title"></label>
+        <m-select model="answers[key][field.title]" name="{{field.title}}" options="field.options"/>
+      </div>
+
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'scale'">
+        <label ng-bind-html="field.title"></label>
+        <m-scale 
+            model="answers[key][field.title]" 
+            name="{{field.title}}" scale-size="field.scale_size" 
+            scale-marker-begin="field.scale_marker_begin" 
+            scale-marker-end="field.scale_marker_end"
+        />
+      </div>
+      
+      <div class="m-custom-form-field" ng-if="field.type == 'address'">
+        <label ng-bind-html="field.title"></label>
+        <m-address model="answers[key][field.title]" name="{{field.title}}" options="field['address-options']"/>
+      </div>
+      
     </div>
-  </form>
+  </m-form>
 </div>
